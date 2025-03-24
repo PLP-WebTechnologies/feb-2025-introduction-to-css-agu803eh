@@ -1,0 +1,205 @@
+<!DOCTYPE html>     
+<html>  
+    <meta name="description" content="HTML lists, images,Tables and forms">
+    <title>HTML lists, images,Tables and forms </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<head>
+    <title>HTML lists, images,Tables and forms </title>
+    <meta name="description" content="HTML lists, images,Tables and forms">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1 style="color: blue;">HTML lists</h1>
+        <style>
+
+    
+        h1{
+            color: blue;
+            font-size: 30px;
+        }
+        p{
+            color: white;
+            font-size: 20px;
+        }
+        ol{
+            color: gold;
+            font-size: 15px;
+        }
+        ul{
+            color: gold;
+            font-size: 15px;
+        }
+        dl{
+            color: gold;
+            font-size: 15px;
+        }
+        img{
+            border: 1px whitesmoke;
+        }
+        table{
+            border-collapse: collapse;
+            width: 50%;
+            border: 1px whitesmoke;
+            color: gold;
+            font-weight: bold;
+        }
+        th, td{
+            border: 1px whitesmoke;
+            padding: 8px;
+            text-align: left;
+        }
+        th{
+            background-color: lightgrey;
+        }
+        tfoot{
+            background-color: lightgrey;
+        }
+        form{
+            background-color: lightgrey;
+            padding: 20px;
+        }
+        audio{
+            margin-top: 20px;
+        }
+        video{
+            margin-top: 20px;
+        } */
+    </style>
+</head>
+<body>
+    <p>HTML lists allow web developers to group a set of related items in lists. There are three types of lists in HTML:</p>
+    <ol type="i">
+        <li>Unordered list</li>
+        <li>Ordered list</li>
+        <li>Definition list</li>
+    </ol>
+    <h2>Unordered list</h2>
+    <p>An unordered list starts with the ul tag. Each list item starts with the li tag.</p>
+    <ul type="disk">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+        </ul>
+        <h2>Definition list</h2>
+        <p>A definition list is a list of terms and their definitions. It starts with the dl tag. Each term starts with the dt tag and each definition starts with the dd tag.</p>
+        
+        <dl>
+<!--dt style="text-align: center;">Centered Term</dt-->
+<!--dd style="text-align: center;">This definition is centered</dd-->
+            <dt>HTML</dt>
+            <dd>A markup language for creating web pages</dd>
+            <dt>CSS</dt>
+            <dd>A style sheet language used for describing the presentation of a document written in HTML</dd>
+        <dd>Structured Query Language used for managing databases</dd>
+            <dd>A programming language commonly used in web development</dd>
+            <dt>PHP</dt>
+            <dd>A server-side scripting language used for web development</dd>
+            <dt>SQL</dt>
+        </dd> Structured Query Language used for managing databases</dd>
+    </dl>
+        <h2>Images</h2>
+        <p>To display an image on a web page, you need to use the img tag. The src attribute specifies the URL of the image and the alt attribute specifies an alternate text for the image.</p>
+        <img src="pexels-padrinan-1591061.jpg" alt="Programming symbols" width="300" height="200"> 
+        <h2>Tables</h2>
+        <p>HTML tables allow web developers to arrange data into rows and columns. A table is defined using the table tag. Each row is defined with the tr tag. A table header is defined with the th tag. By default, table headings are bold and centered. A table data/cell is defined with the td tag.</p>
+        <table>
+            
+        <tr >
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>123 Main St</td>
+            <td>+1234567890</td>
+            <td>john.doe@example.com</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>456 Elm St</td>
+            <td>+9876543210</td>
+            <td>jane.smith@example.com</td>
+        </tr>
+        <tr>
+            <td>Emily Johnson</td>
+            <td>789 Oak St</td>
+            <td>+1122334455</td>
+            <td>emily.johnson@example.com</td>
+        </tr>
+        <tr>
+            <td>Michael Brown</td>
+            <td>321 Pine St</td>
+            <td>+5566778899</td>
+            <td>michael.brown@example.com</td>
+        </tr>
+        <tr>
+            <td>Sarah Davis</td>
+            <td>654 Maple St</td>
+            <td>+9988776655</td>
+            <td>sarah.davis@example.com</td>
+        </tr>
+        </tfoot>
+        </table>
+            <tr>
+                <td colspan="4">Contact List</td>
+            </tr>
+
+        </table>
+        <h2>Forms</h2>
+        <p>HTML forms are used to collect user input. A form is defined using the form tag. The input element is used to create form controls such as text fields, checkboxes, radio buttons, and submit buttons.</p>
+        <form action="/submit-form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="password">Password:</label><br>
+            <textarea id="password" name="Password" rows="1" cols="30"></textarea><br><br>
+            <label for="dob">Date:</label>
+            <input type="date" id="Date" name="Date"><br><br>
+            <label for="Country">Country:</label>
+            <select id="Country" name="Country">
+                <option value="Kenya">Kenya</option>
+            </form>
+            <h2>Audio</h2>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Rwanda">Rwanda</option>
+            </select>
+            <input type="submit" value="Submit">
+
+            <h2>Audio</h2>
+            <p>The controls attribute adds audio controls, like play, pause, and volume.</p>
+            <audio controls>
+                <source src="Fireboy_DML_Scatter_9jaflaver.com_.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h2>Video</h2>
+            <p>The controls attribute adds video controls, like play, pause, and volume.</p>
+            <video width="320" height="240" controls>
+                <source src="rihanna_we_found_love_official_video_h264_56697.mp4" type="video/mp4">
+                <a href="https://google.com" class="home-footer">Google</a>
+            </footer>
+            &copy; 2021
+            </body>
+            <footer>
+                <a href="forehead.html">Back to Start page</a>
+                <a href="https://www.counterpointresearch.com/global-smartwatch-market-grew-35-yoy-q1-2021/">Counterpoint Research</a>
+            </html>href="https://straitsresearch.com/report/smartwatch-market">Straits Research</a>
+                <a href classname="https://google.com">Google</a>
+            </footer class="home-footer"> &copy; 2021
+          
+            <!-- external CSS-->
+           <link rel = "stylesheet" type = "text/css" href = "style.css" />
+            <!-- external JavaScript-->
+            <script type = "text/javascript" src = "script.js"></script>
+            </html>

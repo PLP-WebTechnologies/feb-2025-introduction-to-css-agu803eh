@@ -1,0 +1,86 @@
+#google {
+    color: red; text-decoration: none; font-weight: bold; 
+  }
+  .home-footer {
+    color: blueviolet; text-decoration: none  !important; font-weight: lighter; 
+  }
+  
+  body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('pexels-danielabsi-952670.jpg'); /*location of the image used*/        
+      background-repeat: no-repeat;   
+    background-size: cover; /*cover the entire background*/
+    background-position:center; /*position the image*/
+  }
+  
+  
+  
+  /**<div id="CSS">  
+  
+  </div>
+  
+  #CSS - Cascading Style Sheets
+  CSS rules are used to style HTML elements. CSS is a language that describes the style of an HTML document. CSS describes how HTML elements should be displayed. This tutorial will teach you CSS from basic to advanced.
+  1. Selector
+  2. Declaration block { }
+  
+  p{
+    
+      color: red;
+      font-size: 20px;
+  }
+  
+  /*Selectors
+  Selectors are used to select the HTML elements you want to style. There are several types of selectors in CSS. Here are some of the most common ones:
+  1. Universal selector (*)... targets all elemnets in the document
+  *{
+      #property : value;
+      color: red;
+  }--- to be applied across all elements in the document
+  2. Element selector... targets all elements of a specific type
+  p{
+      #property : value;
+      color: red;
+  }--- to be applied across all paragraph elements in the document
+  3. Class selector... targets all elements with a specific class attribute (.)   
+  .classname{
+      #property : value;
+      color: red;
+  }--- to be applied across all elements with the class name "classname"
+  <h3 class="classname">This is a heading</h3>
+  <p class="classname">This is a paragraph</p>
+  .classname{
+      #property : value;
+      color: red;}
+  4. ID selector... targets a single element with a specific id attribute (#)
+  #idname{
+      #property : value;
+      color: red;
+  }--- to be applied across the element with the id name "idname"
+  <table id="idname">
+      <tr>
+          <td>Row 1, Cell 1</td>
+          <td>Row 1, Cell 2</td>
+      </tr>
+  
+      5. Grouping selector... targets multiple selectors at once
+      h1, h2, h3{
+          #property : value;
+          color: red;
+      }--- to be applied across all h1, h2, and h3 elements in the document
+  
+      6. Descendant selector... targets an element that is a descendant of another element
+      div p{
+          #property : value;
+          color: red;
+      }--- to be applied across all paragraph elements that are descendants of a div element
+  
+      Margin and Padding
+      Margin and padding are two important CSS properties that are used to create space around elements. Margin is the space outside the border of an element, while padding is the space inside the border of an element.
+      margin - space outside the border of an element
+      padding - space inside the border of an element
